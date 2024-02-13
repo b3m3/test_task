@@ -1,0 +1,63 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* root */
+
+:root {
+  --black: #000;
+  --white: #FFF;
+  --red-400: #B82121;
+  --grey-300: #E0E0E0;
+}
+
+/* settings */
+
+html {
+  scroll-behavior: smooth; 
+  font-size: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "NotoSans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  height: 100%;
+  color: var(--white); 
+  background-color: var(--black);
+}
+
+.app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-wrapp {
+  flex: 1 0 auto;
+}
+
+.main {
+  height: 100%;
+}
+
+.container {
+  max-width: 79.375rem;
+  margin: 0 auto;
+  padding: 0 .9375rem;
+}

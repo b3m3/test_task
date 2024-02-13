@@ -1,0 +1,128 @@
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.header__main {
+  display: grid;
+  align-items: center;
+  grid-template: 4.6875rem / auto 1fr auto auto;
+  grid-column-gap: 2.375rem;
+}
+
+.header__navbar {
+  padding-left: 11.274%;
+
+  &_list {
+    max-width: 34.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .75rem;
+  }
+
+  &_item {
+    text-transform: uppercase;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--white);
+      transform: scale(0);
+      transition: transform .2s;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        &::before {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}
+
+.header__phone {
+  display: flex;
+  align-items: center;
+  gap: .625rem;
+  transition: opacity .2s;
+
+  @media (any-hover: hover) {
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &_link {
+    display: flex;
+  }
+}
+
+.header__socials {
+  display: flex;
+  align-items: center;
+  gap: .9375rem;
+
+  &_item {
+    transition: transform .2s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &_link {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header__main {
+    grid-template: 4.125rem / 1fr auto auto auto;
+    grid-column-gap: .9375rem;
+  }
+
+  .header__logo {
+    width: 6.9375rem;
+  }
+
+  .header__navbar {
+    padding: 3.5rem 0 0 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000cc;
+    backdrop-filter: blur(.3125rem);
+    -webkit-backdrop-filter:  blur(.3125rem);
+    display: none;
+
+    &_list {
+      max-width: 100%;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+  }
+
+  .header__phone {
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+    transition: opacity .2s;
+  
+    &_link-tel {
+      display: none;
+    }
+  }
+}

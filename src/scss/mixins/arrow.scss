@@ -1,0 +1,30 @@
+@mixin arrow($direction, $color, $border, $size){ 
+  @if $direction == up { 
+    border: solid $color;
+    border-width: 0 $border $border 0;
+    display: inline-block;
+    padding: $size;
+    transform: rotate(-135deg);
+  }
+  @if $direction == down {
+    border: solid $color;
+    border-width: 0 $border $border 0;
+    display: inline-block;
+    padding: $size;
+    transform: rotate(45deg);
+  }
+  @if $direction == left { 
+    border: solid $color;
+    border-width: 0 $border $border 0;
+    display: inline-block;
+    padding: $size;
+    transform: rotate(135deg);
+  } 
+  @if $direction == right { 
+    border: solid $color;
+    border-width: 0 $border $border 0;
+    display: inline-block;
+    padding: $size;
+    transform: rotate(-45deg);
+  } 
+}

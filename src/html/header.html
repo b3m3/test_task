@@ -1,0 +1,57 @@
+<header class="header">
+  <div class="container">
+    <div class="header__main">
+
+      <div class="header__logo">
+        @@include('logo.html')
+      </div>
+
+      <nav class="header__navbar">
+        <ul class="header__navbar_list">
+          <li class="header__navbar_item">
+            <a class="header__navbar_link" href="#">главная</a>
+          </li>
+          <li class="header__navbar_item">
+            <a class="header__navbar_link" href="#">меню</a>
+          </li>
+          <li class="header__navbar_item">
+            <a class="header__navbar_link" href="#">доставка</a>
+          </li>
+          <li class="header__navbar_item">
+            <a class="header__navbar_link" href="#">контакты</a>
+          </li>
+          <li class="header__navbar_item">
+            <a class="header__navbar_link" href="#">акции</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__phone">
+        <a class="header__phone_link" href="tel:+380987654321">
+          <img class="header__phone_icon" src="@img/header/phone.svg" alt="phone">
+        </a>
+        <a class="header__phone_link header__phone_link-tel" href="tel:+380987654321">+380 (98) 765 43 21</a>
+      </div>
+
+      <ul class="header__socials">
+        <li class="header__socials_item">
+          <a class="header__socials_link" href="https://www.instagram.com/">
+            <img class="header__socials_icon" src="@img/header/inst.svg" rel="noreferrer" target="_blank" alt="instagram">
+          </a>
+        </li>
+        <li class="header__socials_item">
+          <a class="header__socials_link" href="https://www.facebook.com/">
+            <img class="header__socials_icon" src="@img/header/fb.svg" rel="noreferrer" target="_blank" alt="instagram">
+          </a>
+        </li>
+        <li class="header__socials_item">
+          <a class="header__socials_link" href="https://twitter.com/?lang=en">
+            <img class="header__socials_icon" src="@img/header/tw.svg" rel="noreferrer" target="_blank" alt="instagram">
+          </a>
+        </li>
+      </ul>
+
+      @@include('menu-hamburger.html')
+    </div>
+  </div>
+</header>
