@@ -58,7 +58,19 @@ body {
 }
 
 .container {
-  max-width: 79.375rem;
+  max-width: 78.75rem;
   margin: 0 auto;
-  padding: 0 .9375rem;
+  padding: 0 .625rem;
+}
+
+.btn {
+  background: var(--red-400);
+  font-weight: 900;
+  font-size: .875rem;
+  width: 14.3125rem;
+  height: 3.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .3125rem;
 }
