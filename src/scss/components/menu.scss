@@ -11,8 +11,11 @@
 
   &__decore {
     position: absolute;
-    top: -2.5rem;
+    top: -2.1875rem;
     left: 0;
+
+    width: 23.0621rem;
+    height: 23.0621rem;
   }
   
   &__swiper-wrapper {
@@ -68,9 +71,7 @@
     font-weight: 800;
     font-size: 1.5rem;
     line-height: 292%;
-    opacity: 0;
     pointer-events: none;
-    transition: .4s
   }
 }
 
@@ -80,11 +81,6 @@
   }
 
   .menu__swiper-btn {
-    opacity: 1;
-    pointer-events: all;
-  }
-
-  .menu__swiper-text {
     opacity: 1;
     pointer-events: all;
   }
@@ -125,10 +121,15 @@
       display: flex;
       flex-direction: column;
       gap: .625rem;
+      margin: 0;
     }
 
     &__swiper-slide{
       height: 18.75rem;
+
+      &::before {
+        background: rgba(0, 0, 0, .7);
+      }
     }
 
     &__swiper-btn {

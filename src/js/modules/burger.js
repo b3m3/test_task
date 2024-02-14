@@ -1,30 +1,26 @@
 const menuBurger = () => {
-  const header = document.querySelector('header');
+  const menuLinks = document.querySelectorAll('.header__navbar_link');
+  const menu = document.querySelector('.header__navbar');
+  const burgerBtn = document.querySelector('.menu-hamburger');
 
-  header.addEventListener('click', (e) => {
-    const menu = document.querySelector('.header__menu');
+  burgerBtn.addEventListener('click', () => {
+    burgerBtn.classList.toggle('active');
 
-    if (e.target.closest('.burger')) {
+    if (burgerBtn.classList.contains('active')) {
+      menu.classList.add('active');
       document.body.style.overflow = 'hidden';
-      menu.classList.add('show-menu');
+    } else {
+      menu.classList.remove('active');
+      document.body.style.overflow = 'auto';
     }
+  })
 
-    if (!e.target.closest('.menu__list') && !e.target.closest('.burger')) {
-      document.body.style.overflow = '';
-      menu.classList.remove('show-menu');
-    }
-
-    switch (e.target.className) {
-      case 'menu__close':
-        menu.classList.remove('show-menu');
-        break;
-      case 'menu__link':
-        menu.classList.remove('show-menu');
-        break;
-      case 'button-header__btn btn btn_white swap-button':
-        menu.classList.remove('show-menu');
-        break;
-    }
+  menuLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      burgerBtn.classList.remove('active');
+      menu.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    })
   });
 };
 
