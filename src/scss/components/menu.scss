@@ -1,0 +1,151 @@
+.menu {
+  position: relative;
+  overflow: hidden;
+  padding-top: 8.5625rem;
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: 3.875rem;
+  }
+
+  &__decore {
+    position: absolute;
+    top: -2.5rem;
+    left: 0;
+  }
+  
+  &__swiper-wrapper {
+    height: 31.625rem;
+    margin: 0 -10%;
+  }
+  
+  &__swiper-slide {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      z-index: 1;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, .7);
+      transition: .4s
+    }
+  }
+  
+  &__swiper-image {
+    & img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  &__swiper-btn {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    pointer-events: none;
+    transition: .4s
+  }
+  
+  &__swiper-text {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 292%;
+    opacity: 0;
+    pointer-events: none;
+    transition: .4s
+  }
+}
+
+.swiper-slide-active {
+  &::before {
+    background: transparent;
+  }
+
+  .menu__swiper-btn {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .menu__swiper-text {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+.swiper-button {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: .2s;
+
+  &_prev {
+    left: 5.9375rem;
+  }
+
+  &_next {
+    right: 5.9375rem;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      opacity: .7;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .menu {
+    padding: 3.75rem .625rem 0 .625rem;
+
+    &__decore {
+      display: none;
+    }
+
+    &__swiper-wrapper {
+      height: unset;
+      display: flex;
+      flex-direction: column;
+      gap: .625rem;
+    }
+
+    &__swiper-slide{
+      height: 18.75rem;
+    }
+
+    &__swiper-btn {
+      top: 9.125rem;
+      transform: translate(-50%, 0);
+      opacity: 1;
+      pointer-events: all;
+    }
+  
+    &__swiper-text {
+      line-height: 1;
+      top: 93px;
+      opacity: 1;
+    }
+  }
+
+  .swiper-button {
+    display: none;
+  }
+}

@@ -2,8 +2,9 @@
 @import 'modules/fonts';
 @import 'modules/icon-fonts';
 @import 'modules/logo';
-// @import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/swiper.scss';
 
+/* general */
 @import 'main';
 
 /* ======== components ======== */
@@ -16,6 +17,9 @@
 
 /* taste */
 @import 'components/taste';
+
+/* menu */
+@import 'components/menu';
 
 
 /* footer */

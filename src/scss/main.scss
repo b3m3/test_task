@@ -22,6 +22,7 @@ button {
   --black: #000;
   --white: #FFF;
   --red-400: #B82121;
+  --red-hover: #ef2121;
   --grey-800: #393939;
   --grey-300: #E0E0E0;
 }
@@ -112,4 +113,34 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: .3125rem;
+  transition: background .3s;
+
+  @media (any-hover: hover) {
+    &:hover {
+      background: var(--red-hover);
+    }
+  }
+}
+
+.menu-btn {
+  max-width: 14.3125rem;
+  width: 100%;
+  height: 3.75rem;
+  border: 2px solid rgba(255, 255, 255, .6);
+  border-radius: .3125rem;
+  background: rgba(0, 0, 0, .6);
+  font-weight: 900;
+  font-size: .875rem;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .2s;
+
+  @media (any-hover: hover) {
+    &:hover {
+      border: 2px solid rgba(255, 255, 255, 1);
+      background: rgba(0, 0, 0, .8);
+    }
+  }
 }
