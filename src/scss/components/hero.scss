@@ -10,7 +10,6 @@
 .hero__background {
   position: absolute;
   z-index: 0;
-  content: '';
   top: 0;
   left: 0;
   width: 100%;
@@ -21,7 +20,6 @@
 .hero__decore {
   position: absolute;
   z-index: 0;
-  content: '';
   bottom: -12.5rem;
   left: -3.25rem;
 }

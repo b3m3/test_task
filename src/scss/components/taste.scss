@@ -1,0 +1,116 @@
+.taste {
+  position: relative;
+  margin-top: 3.0625rem;
+  padding-top: 4.5rem;
+  overflow: hidden;
+}
+
+.taste__main {
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+}
+
+.taste__decore {
+  position: absolute;
+
+  &_01 {
+    right: -11.25rem;
+    bottom: 0;
+  }
+  &_02 {
+    left: -4.625rem;
+    top: -4rem;
+  }
+}
+
+.taste__body {
+  position: relative;
+
+  &_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &_item {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  &_img {
+    overflow: hidden;
+    position: relative;
+    width: 17.9375rem;
+    height: 17.9375rem;
+    border-radius: 50%;
+    cursor: pointer;
+
+    @media (any-hover: hover) {
+      &:hover {
+        & img {
+          transform: scale(1.3);
+        }
+      }
+    }
+
+    & img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .4s;
+    }
+  }
+
+  &_text {
+    max-width: 17.625rem;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.125rem;
+  }
+}
+
+.taste__button {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .taste {
+    margin-top: 1.8125rem;
+    padding-top: 1.3125rem;
+  }
+
+  .taste__main {
+    align-items: center;
+  }
+
+  .taste__decore {
+    &_01 {
+      right: -215px;
+      bottom: 11.3125rem;
+      width: 417px;
+      height: 350px;
+    }
+    &_02 {
+      left: unset;
+      right: -4.625rem;
+      top: -3.0625rem;
+    }
+  }
+
+  .taste__body {
+    &_list {
+      flex-direction: column;
+      gap: 1.875rem;
+    }
+  }
+  
+  .taste__button {
+    display: none;
+  }
+}
