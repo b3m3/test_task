@@ -17,14 +17,19 @@
     width: 23.0621rem;
     height: 23.0621rem;
   }
+
+  &__swiper {
+    overflow: visible !important;
+  }
   
   &__swiper-wrapper {
     height: 31.625rem;
-    margin: 0 -10%;
+    margin: 0 0 0 332px;
   }
   
   &__swiper-slide {
     position: relative;
+    width: 18rem !important;
 
     &::before {
       position: absolute;
@@ -94,11 +99,11 @@
   transition: .2s;
 
   &_prev {
-    left: 5.9375rem;
+    left: 0;
   }
 
   &_next {
-    right: 5.9375rem;
+    right: 0;
   }
 
   @media (any-hover: hover) {
@@ -126,6 +131,7 @@
 
     &__swiper-slide{
       height: 18.75rem;
+      width: 100% !important;
 
       &::before {
         background: rgba(0, 0, 0, .7);

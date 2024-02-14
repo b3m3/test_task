@@ -7,7 +7,7 @@ const slider = () => {
     modules: [Navigation],
     loop: true,
     spaceBetween: 5,
-    slidesPerView: 5,
+    slidesPerView: 'auto',
     initialSlide: 2,
     navigation: {
       nextEl: '.swiper-button_next',
