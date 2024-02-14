@@ -25,6 +25,7 @@
 
   &_item {
     text-transform: uppercase;
+    font-weight: 500;
     position: relative;
 
     &::before {
@@ -52,6 +53,8 @@
 .header__phone {
   display: flex;
   align-items: center;
+  font-weight: 700;
+  font-size: 1.3125rem;
   gap: .625rem;
   transition: opacity .2s;
 

@@ -1,0 +1,158 @@
+.footer__main {
+  font-family: "Montserrat";
+  padding: 2.1875rem 0 2.0625rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.1875rem;
+}
+
+.footer__top {
+  display: grid;
+  align-items: center;
+  grid-template: 4.375rem / minmax(auto, 14.375rem) minmax(auto, 26rem) minmax(auto, 24.6875rem) minmax(auto, 12.375rem);
+
+  &_col {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+
+    &:nth-child(2) {
+      padding-left: 14.6%;
+    }
+
+    &:nth-child(3) {
+      padding-left: 19.497%;
+    }
+
+    &:nth-child(4) {
+     justify-self: end;
+    }
+
+    &:not(:last-child) {
+      border-right: 1px solid var(--grey-800);
+    }
+  }
+
+  &_tel {
+    font-weight: 700;
+    font-size: 1.3125rem;
+    transition: opacity .2s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+
+  &_address {
+    font-style: normal;
+    font-size: .875rem;
+  }
+  
+  &_mail {
+    font-size: .875rem;
+    transition: opacity .2s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &_col {
+    display: flex;
+    align-items: center;
+    gap: 1.875rem;
+  }
+
+  &_text {
+    font-size: .75rem;
+    color: var(--grey-300);
+  }
+}
+
+.socials__footer_top {
+  display: flex;
+  align-items: center;
+  gap: .625rem;
+
+  &_item {
+    transition: transform .2s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &_link {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .footer__top {
+    &_col {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer__main {
+    gap: 2rem;
+    padding: 1.875rem 0;
+  }
+
+  .footer__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    &_col {
+      padding: unset !important;
+      border-right: unset !important;
+      gap: .75rem;
+
+      
+      &:nth-child(2) {
+        margin-top: .625rem;
+      }
+
+      &:nth-child(3) {
+        margin-top: .875rem;
+      }
+
+      &:nth-child(4) {
+        margin-top: 27px;
+      }
+    }
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: .625rem;
+  
+    &_col {
+      flex-direction: column;
+      gap: .625rem;
+    }
+
+    &_text {
+      font-size: .625rem;
+    }
+  }
+}
