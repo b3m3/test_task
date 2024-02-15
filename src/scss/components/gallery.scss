@@ -76,8 +76,6 @@
   }
 }
 
-
-
 .gallery-modal {
   position: fixed;
   z-index: 10;
@@ -107,8 +105,18 @@
     max-width: 37.5rem;
     height: 21.875rem;
 
+    & p {
+      position: absolute;
+      z-index: 1;
+      bottom: -2.5rem;
+      left: 0;
+      width: 100%;
+      text-align: center;
+    }
+
     & img {
       position: absolute;
+      z-index: 2;
       top: 0;
       left: 0;
       width: 100%;

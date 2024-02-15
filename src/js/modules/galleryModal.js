@@ -8,15 +8,19 @@ const galleryModal = () => {
     galleryModalImage.src = src;
   }
 
-  const closeGalleryModal = () => {
-    galleryModal.classList.remove('active');
+  const closeGalleryModal = (e) => {
+    if (e.target && e.target.classList.contains('gallery-modal')) {
+      e.target.classList.remove('active')
+    }
   }
 
   galleryImgs.forEach((img) => {
     img.addEventListener('click', () => openGalleryModal(img.src));
   });
 
-  galleryModal.addEventListener('click', closeGalleryModal);
+  galleryModal.addEventListener('click', (e) => {
+    closeGalleryModal(e);
+  });
 }
 
 export default galleryModal;
