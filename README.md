@@ -2,7 +2,7 @@
 
 - Install [Node.js](https://nodejs.org/en/)
 - git clone https://github.com/b3m3/test_task
-- cd to the project
+- cd ./test_task
 - npm install
 
 ### Usage
