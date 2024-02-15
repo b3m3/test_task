@@ -24,7 +24,7 @@
   
   &__swiper-wrapper {
     height: 31.625rem;
-    margin: 0 0 0 332px;
+    margin: 0 0 0 20.75rem;
   }
   
   &__swiper-slide {
@@ -113,7 +113,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .menu {
     padding: 3.75rem .625rem 0 .625rem;
 
@@ -129,12 +129,12 @@
       margin: 0;
     }
 
-    &__swiper-slide{
+    &__swiper-slide {
       height: 18.75rem;
       width: 100% !important;
 
       &::before {
-        background: rgba(0, 0, 0, .7);
+        background: rgba(0, 0, 0, .4);
       }
     }
 
@@ -147,7 +147,7 @@
   
     &__swiper-text {
       line-height: 1;
-      top: 93px;
+      top: 5.8125rem;
       opacity: 1;
     }
   }
@@ -156,3 +156,11 @@
     display: none;
   }
 }
+
+// @media screen and (max-width: 768px) {
+//   .menu {
+//     &__swiper-slide {
+//       height: 18.75rem;
+//     }
+//   }
+// }

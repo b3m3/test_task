@@ -4,13 +4,13 @@ import menuBurger from "./modules/burger.js";
 document.addEventListener('DOMContentLoaded', () => {
   'use strict';
 
+  menuBurger();
+
   // Slider
 
   const width = window.innerWidth;
   
-  if (width > 1024) {
+  if (width > 768) {
     slider();
   }
-
-  menuBurger();
 });

@@ -1,6 +1,4 @@
 import Swiper, {Navigation} from 'swiper';
-// import Swiper from 'swiper';
-// import { Navigation } from 'swiper/modules';
 
 const slider = () => {
   const swiper = new Swiper('.swiper', {
