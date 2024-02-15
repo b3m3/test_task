@@ -1,4 +1,4 @@
-import slider from "./modules/slider.js";
+import {sliderMenu, sliderGallery} from "./modules/slider.js";
 import menuBurger from "./modules/burger.js";
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -6,11 +6,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   menuBurger();
 
-  // Slider
-
+  // Sliders
+  
   const width = window.innerWidth;
   
   if (width > 768) {
-    slider();
+    sliderMenu();
+  }
+
+  if (width < 526) {
+    sliderGallery();
   }
 });

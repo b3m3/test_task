@@ -1,7 +1,7 @@
-import Swiper, {Navigation} from 'swiper';
+import Swiper, {Navigation, Pagination, Grid} from 'swiper';
 
-const slider = () => {
-  const swiper = new Swiper('.swiper', {
+export const sliderMenu = () => {
+  const menuSwiper = new Swiper('.menu__swiper', {
     modules: [Navigation],
     loop: true,
     spaceBetween: 5,
@@ -12,6 +12,18 @@ const slider = () => {
       prevEl: '.swiper-button_prev',
     },
   });
+
 };
 
-export default slider;
+export const sliderGallery = () => {
+  const gallerySwiper = new Swiper('.gallery__swiper', {
+    modules: [Pagination],
+    loop: true,
+    spaceBetween: 20,
+    slidesPerView: 1,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+}
