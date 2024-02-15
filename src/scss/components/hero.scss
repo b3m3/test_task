@@ -3,8 +3,8 @@
 }
 
 .hero__main {
-  height: 50rem;
   overflow: hidden;
+  height: 50rem;
 }
 
 .hero__background {
@@ -61,7 +61,7 @@
   }
 
   .hero__col {
-    padding-top: 12.5rem;
+    padding: 12.5rem 0 0 0;
     gap: 1.875rem;
     margin: 0 auto;
     text-align: center;

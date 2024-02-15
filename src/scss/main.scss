@@ -55,9 +55,9 @@ body {
 }
 
 .main {
+  height: 100%;
   position: relative;
   overflow: hidden;
-  height: 100%;
 }
 
 .container {
@@ -84,11 +84,11 @@ body {
   }
 
   &_02 {
-    top: 135.125rem;
-    max-height: 136.4375rem;
+    bottom: 0;
+    max-height: 120.4375rem;
 
     @media screen and (max-width: 1024px) {
-      top: 260.125rem;
+      max-height: 161.4375rem;
     }
   }
 }
