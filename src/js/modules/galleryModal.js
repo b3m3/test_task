@@ -8,11 +8,13 @@ const galleryModal = () => {
     galleryModal.classList.add('active');
     galleryModalImage.src = src;
     galleryModalSource.srcset = src;
+    document.body.style.overflow = 'hidden';
   }
 
   const closeGalleryModal = (e) => {
     if (e.target && e.target.classList.contains('gallery-modal')) {
-      e.target.classList.remove('active')
+      e.target.classList.remove('active');
+      document.body.style.overflow = 'auto';
     }
   }
 

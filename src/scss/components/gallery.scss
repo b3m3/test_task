@@ -63,6 +63,7 @@
   
   .swiper-pagination {
     display: block;
+    z-index: 1 !important;
     bottom: 0 !important;
   
     .swiper-pagination-bullet {
