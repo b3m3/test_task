@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.svg">
+  <link rel="stylesheet" href="css/style.min.css?_v=20240215160856">
+  <title>Gulp</title>
+</head>
+
+<body>
+  <div class="app" id="app">
+    <!-- header -->
+    <header class="header">
+  <div class="container">
+    <div class="header__main">
+
+      <div class="header__logo">
+        <a href="#" class="logo">
+  <img src="img/logo.svg" alt="logo">
+</a>
+      </div>
+
+      <nav class="header__navbar">
+        <ul class="header__navbar_list">
+          <li class="header__navbar_item">
+            <a class="header__navbar_link" href="#">главная</a>
+          </li>
+          <li class="header__navbar_item">
+            <a class="header__navbar_link" href="#menu">меню</a>
+          </li>
+          <li class="header__navbar_item">
+            <a class="header__navbar_link" href="#delivery">доставка</a>
+          </li>
+          <li class="header__navbar_item">
+            <a class="header__navbar_link" href="#footer">контакты</a>
+          </li>
+          <li class="header__navbar_item">
+            <a class="header__navbar_link" href="#taste">акции</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__phone">
+        <a class="header__phone_link" href="tel:+380987654321">
+          <img class="header__phone_icon" src="img/header/phone.svg" alt="phone">
+        </a>
+        <a class="header__phone_link header__phone_link-tel" href="tel:+380987654321">+380 (98) 765 43 21</a>
+      </div>
+
+      <ul class="header__socials">
+        <li class="header__socials_item">
+          <a class="header__socials_link" href="https://www.instagram.com/">
+            <img class="header__socials_icon" src="img/header/inst.svg" rel="noreferrer" target="_blank" alt="instagram">
+          </a>
+        </li>
+        <li class="header__socials_item">
+          <a class="header__socials_link" href="https://www.facebook.com/">
+            <img class="header__socials_icon" src="img/header/fb.svg" rel="noreferrer" target="_blank" alt="instagram">
+          </a>
+        </li>
+        <li class="header__socials_item">
+          <a class="header__socials_link" href="https://twitter.com/?lang=en">
+            <img class="header__socials_icon" src="img/header/tw.svg" rel="noreferrer" target="_blank" alt="instagram">
+          </a>
+        </li>
+      </ul>
+
+      <button class="menu-hamburger">
+  <i></i>
+  <i></i>
+  <i></i>
+</button>
+    </div>
+  </div>
+</header>
+
+    <!-- wrapp -->
+    <div class="app-wrapp">
+      <main class="main">
+
+        <picture><source srcset="img/smoke.webp" type="image/webp"><img class="smoke smoke_01" src="img/smoke.webp" alt="smoke"></picture>
+        <picture><source srcset="img/smoke_02.webp" type="image/webp"><img class="smoke smoke_02" src="img/smoke_02.webp" alt="smoke"></picture>
+        
+        <!-- hero -->
+        <section class="hero">
+  <div class="container">
+    <div class="hero__main">
+      
+      <picture><source srcset="img/hero/hero_01.webp" type="image/webp"><img class="hero__background" src="img/hero/hero_01.webp" alt="background"></picture>
+      <picture><source srcset="img/hero/tomat.webp" type="image/webp"><img class="hero__decore" src="img/hero/tomat.webp" alt="tomat"></picture>
+
+      <div class="hero__col">
+        <h1 class="hero__title">Попробуй лучшую <span>грузинскую</span> кухню.</h1>
+        <p class="hero__text">В нашем ресторане Вы найдете лучшие блюда приготвленные по старинным рецептам грузинской кухни. Потрясающий вкус блюд перенесет Вас к атмосферу невероятного Тбилисси не выходя из дома. </p>
+        <a class="hero__btn btn" href="#menu">ПЕРЕЙТИ К МЕНЮ</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!-- taste -->
+        <section class="taste" id="taste">
+  <div class="container container_small">
+    <div class="taste__main">
+
+      <img class="taste__decore taste__decore_01" src="img/taste/fl_big.svg" alt="decore">
+      
+      <div class="taste__top top-title">
+        <h2 class="taste__top_title title">Попробуйте на вкус</h2>
+        <p class="taste__top_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium netus urna hendrerit convallis aliquam consequat turpis.</p>
+      </div>
+      
+      <div class="taste__body">
+        <img class="taste__decore taste__decore_02" src="img/taste/fl_small.svg" alt="decore">
+
+        <ul class="taste__body_list">
+          <li class="taste__body_item">
+              <div class="taste__body_img">
+                <picture><source srcset="img/taste/img_01.webp" type="image/webp"><img src="img/taste/img_01.webp" alt="menu-image"></picture>
+              </div>
+
+              <p class="taste__body_text">Здесь будет какой то текст, возможно назване блюда</p>
+          </li>
+          <li class="taste__body_item">
+            <div class="taste__body_img">
+              <picture><source srcset="img/taste/img_02.webp" type="image/webp"><img src="img/taste/img_02.webp" alt="menu-image"></picture>
+            </div>
+
+            <p class="taste__body_text">Здесь будет какой то текст, возможно назване блюда</p>
+        </li>
+        <li class="taste__body_item">
+          <div class="taste__body_img">
+            <picture><source srcset="img/taste/img_03.webp" type="image/webp"><img src="img/taste/img_03.webp" alt="menu-image"></picture>
+          </div>
+
+          <p class="taste__body_text">Здесь будет какой то текст, возможно назване блюда</p>
+      </li>
+        </ul>
+      </div>
+
+      <div class="taste__button">
+        <a class="btn" href="#delivery">ПЕРЕЙТИ К ДОСТАВКЕ</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!-- menu -->
+        <section class="menu" id="menu">
+  <div class="container">
+    <div class="menu__main">
+  
+      <picture><source srcset="img/menu/dec_01.webp" type="image/webp"><img class="menu__decore" src="img/menu/dec_01.webp" alt="decore"></picture>
+  
+      <div class="menu__top top-title">
+        <h2 class="menu__top_title title">Меню</h2>
+        <p class="menu__top_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium netus urna hendrerit convallis aliquam consequat turpis.</p>
+      </div>
+  
+      <div class="menu__body">
+        <div class="menu__swiper swiper">
+          <div class="menu__swiper-wrapper swiper-wrapper">
+            <div class="menu__swiper-slide swiper-slide">
+              <div class="menu__swiper-image">
+                <picture><source srcset="img/menu/img_01.webp" type="image/webp"><img src="img/menu/img_01.webp" alt="image"></picture>
+              </div>
+  
+              <buttton class="menu__swiper-btn menu-btn" >открыть меню</buttton>
+              <p class="menu__swiper-text">Салаты</p>
+            </div>
+            
+            <div class="menu__swiper-slide swiper-slide">
+              <div class="menu__swiper-image">
+                <picture><source srcset="img/menu/img_02.webp" type="image/webp"><img src="img/menu/img_02.webp" alt="image"></picture>
+              </div>
+  
+              <buttton class="menu__swiper-btn menu-btn" >открыть меню</buttton>
+              <p class="menu__swiper-text">Выпечка</p>
+            </div>
+  
+            <div class="menu__swiper-slide swiper-slide">
+              <div class="menu__swiper-image">
+                <picture><source srcset="img/menu/img_03.webp" type="image/webp"><img src="img/menu/img_03.webp" alt="image"></picture>
+              </div>
+  
+              <buttton class="menu__swiper-btn menu-btn" >открыть меню</buttton>
+              <p class="menu__swiper-text">Супы</p>
+            </div>
+  
+            <div class="menu__swiper-slide swiper-slide">
+              <div class="menu__swiper-image">
+                <picture><source srcset="img/menu/img_04.webp" type="image/webp"><img src="img/menu/img_04.webp" alt="image"></picture>
+              </div>
+  
+              <buttton class="menu__swiper-btn menu-btn" >открыть меню</buttton>
+              <p class="menu__swiper-text">Блюда на мангале</p>
+            </div>
+  
+            <div class="menu__swiper-slide swiper-slide">
+              <div class="menu__swiper-image">
+                <picture><source srcset="img/menu/img_05.webp" type="image/webp"><img src="img/menu/img_05.webp" alt="image"></picture>
+              </div>
+  
+              <buttton class="menu__swiper-btn menu-btn" >открыть меню</buttton>
+              <p class="menu__swiper-text">Горячие блюда</p>
+            </div>
+  
+            <div class="menu__swiper-slide swiper-slide">
+              <div class="menu__swiper-image">
+                <picture><source srcset="img/menu/img_06.webp" type="image/webp"><img src="img/menu/img_06.webp" alt="image"></picture>
+              </div>
+  
+              <buttton class="menu__swiper-btn menu-btn" >открыть меню</buttton>
+              <p class="menu__swiper-text">Соусы</p>
+            </div>
+          </div>
+  
+          <button class="swiper-button swiper-button_prev">
+            <img src="img/menu/left-arrow.svg" alt="arrow">
+          </button>
+          <button class="swiper-button swiper-button_next">
+            <img src="img/menu/right-arrow.svg" alt="arrow">
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+        <!-- delivery -->
+        <section class="delivery" id="delivery">
+  <div class="container">
+    <div class="delivery__main">
+
+      <img class="delivery__decore delivery__decore_01" src="img/delivery/01.svg" alt="decore">
+      <img class="delivery__decore delivery__decore_02" src="img/delivery/02.svg" alt="decore">
+
+      <div class="delivery__top top-title">
+        <h2 class="delivery__top_title title">Удобные способы доставки</h2>
+        <p class="delivery__top_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium netus urna hendrerit convallis aliquam consequat turpis.</p>
+      </div>
+
+      <div class="body-delivery">
+        <img class="delivery__decore delivery__decore_03" src="img/delivery/03.svg" alt="decore">
+        
+        <ul class="body-delivery__list">
+          <li class="body-delivery__list_item">
+            <div class="body-delivery__list_image">
+              <picture><source srcset="img/delivery/01.webp" type="image/webp"><img src="img/delivery/01.jpg" alt="icon"></picture>
+            </div>
+
+            <p class="body-delivery__list_text">Доставка при помощи наших курьеров при заказе от 1000 грн</p>
+          </li>
+          <li class="body-delivery__list_item">
+            <div class="body-delivery__list_image">
+              <picture><source srcset="img/delivery/02.webp" type="image/webp"><img src="img/delivery/02.jpg" alt="icon"></picture>
+            </div>
+
+            <p class="body-delivery__list_text">Доставка при помощи сервиса по оставке еды и лальше по тексту</p>
+          </li>
+          <li class="body-delivery__list_item">
+            <div class="body-delivery__list_image">
+              <picture><source srcset="img/delivery/03.webp" type="image/webp"><img src="img/delivery/03.jpg" alt="icon"></picture>
+            </div>
+
+            <p class="body-delivery__list_text">Доставка при помощи сервиса по оставке еды и лальше по тексту</p>
+          </li>
+        </ul>
+
+        <div class="body-delivery__image">
+          <picture><source srcset="img/delivery/img.webp" type="image/webp"><img src="img/delivery/img.webp" alt="image"></picture>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!-- gallery -->
+        <div class="gallery">
+  <div class="gallery__main">
+    <div class="gallery__swiper swiper">
+      <div class="gallery__swiper-wrapper swiper-wrapper">
+
+        <div class="gallery__swiper-slide swiper-slide">
+          <picture><source srcset="img/gallery/1.webp" type="image/webp"><img src="img/gallery/1.webp" alt="image"></picture>
+        </div>
+
+        <div class="gallery__swiper-slide swiper-slide">
+          <picture><source srcset="img/gallery/2.webp" type="image/webp"><img src="img/gallery/2.webp" alt="image"></picture>
+        </div>
+
+        <div class="gallery__swiper-slide swiper-slide">
+          <picture><source srcset="img/gallery/3.webp" type="image/webp"><img src="img/gallery/3.webp" alt="image"></picture>
+        </div>
+
+        <div class="gallery__swiper-slide swiper-slide">
+          <picture><source srcset="img/gallery/4.webp" type="image/webp"><img src="img/gallery/4.webp" alt="image"></picture>
+        </div>
+
+        <div class="gallery__swiper-slide swiper-slide">
+          <picture><source srcset="img/gallery/5.webp" type="image/webp"><img src="img/gallery/5.webp" alt="image"></picture>
+        </div>
+        
+        <div class="gallery__swiper-slide swiper-slide">
+          <picture><source srcset="img/gallery/6.webp" type="image/webp"><img src="img/gallery/6.webp" alt="image"></picture>
+        </div>
+
+        <div class="gallery__swiper-slide swiper-slide">
+          <picture><source srcset="img/gallery/7.webp" type="image/webp"><img src="img/gallery/7.webp" alt="image"></picture>
+        </div>
+
+        <div class="gallery__swiper-slide swiper-slide">
+          <picture><source srcset="img/gallery/8.webp" type="image/webp"><img src="img/gallery/8.webp" alt="image"></picture>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="gallery-modal">
+      <div class="gallery-modal__wrapp">
+        <picture><source srcset="img/gallery/8.webp" type="image/webp"><img src="img/gallery/8.webp" alt="image"></picture>
+        <p>Lorem ipsum dolor sit</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-pagination"></div>
+</div>
+
+        <!-- menu-popup -->
+        <div class="menu-popup">
+  <div class="menu-popup__wrapp">
+    <ul class="menu-popup__list-image">
+      <li class="menu-popup__list-image_item">
+        <picture><source srcset="img/popup/01.webp" type="image/webp"><img src="img/popup/01.webp" alt="image"></picture>
+      </li>
+      <li class="menu-popup__list-image_item">
+        <picture><source srcset="img/popup/02.webp" type="image/webp"><img src="img/popup/02.webp" alt="image"></picture>
+      </li>
+      <li class="menu-popup__list-image_item">
+        <picture><source srcset="img/popup/03.webp" type="image/webp"><img src="img/popup/03.webp" alt="image"></picture>
+      </li>
+      <li class="menu-popup__list-image_item">
+        <picture><source srcset="img/popup/04.webp" type="image/webp"><img src="img/popup/04.webp" alt="image"></picture>
+      </li>
+    </ul>
+  
+    <div class="menu-popup__body">
+      <h3 class="menu-popup__body_title">Холодные закуски</h3>
+  
+      <ul class="menu-popup__body_list">
+        <li class="menu-popup__body_item">
+          <div class="menu-popup__body_row">
+            <h4 class="menu-popup__body_subtitle">Сациви из курицы</h4>
+            <b class="menu-popup__body_price">390 грн</b>
+          </div>
+  
+          <div class="menu-popup__body_row">
+            <span class="menu-popup__body_label">200гр.</span>
+            <span class="menu-popup__body_label">КБЖУ: 320/16/27/4</span>
+          </div>
+  
+          <p class="menu-popup__body_text">Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив. 
+            2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+          </p>
+        </li>
+        <li class="menu-popup__body_item">
+          <div class="menu-popup__body_row">
+            <h4 class="menu-popup__body_subtitle">Сациви из курицы</h4>
+            <b class="menu-popup__body_price">390 грн</b>
+          </div>
+  
+          <div class="menu-popup__body_row">
+            <span class="menu-popup__body_label">200гр.</span>
+            <span class="menu-popup__body_label">КБЖУ: 320/16/27/4</span>
+          </div>
+  
+          <p class="menu-popup__body_text">Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив. 
+            2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+          </p>
+        </li>
+        <li class="menu-popup__body_item">
+          <div class="menu-popup__body_row">
+            <h4 class="menu-popup__body_subtitle">Сациви из курицы</h4>
+            <b class="menu-popup__body_price">390 грн</b>
+          </div>
+  
+          <div class="menu-popup__body_row">
+            <span class="menu-popup__body_label">200гр.</span>
+            <span class="menu-popup__body_label">КБЖУ: 320/16/27/4</span>
+          </div>
+  
+          <p class="menu-popup__body_text">Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив. 
+            2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+          </p>
+        </li>
+        <li class="menu-popup__body_item">
+          <div class="menu-popup__body_row">
+            <h4 class="menu-popup__body_subtitle">Сациви из курицы</h4>
+            <b class="menu-popup__body_price">390 грн</b>
+          </div>
+  
+          <div class="menu-popup__body_row">
+            <span class="menu-popup__body_label">200гр.</span>
+            <span class="menu-popup__body_label">КБЖУ: 320/16/27/4</span>
+          </div>
+  
+          <p class="menu-popup__body_text">Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив. 
+            2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+          </p>
+        </li>
+        <li class="menu-popup__body_item">
+          <div class="menu-popup__body_row">
+            <h4 class="menu-popup__body_subtitle">Сациви из курицы</h4>
+            <b class="menu-popup__body_price">390 грн</b>
+          </div>
+  
+          <div class="menu-popup__body_row">
+            <span class="menu-popup__body_label">200гр.</span>
+            <span class="menu-popup__body_label">КБЖУ: 320/16/27/4</span>
+          </div>
+  
+          <p class="menu-popup__body_text">Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив. 
+            2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+          </p>
+        </li>
+        <li class="menu-popup__body_item">
+          <div class="menu-popup__body_row">
+            <h4 class="menu-popup__body_subtitle">Сациви из курицы</h4>
+            <b class="menu-popup__body_price">390 грн</b>
+          </div>
+  
+          <div class="menu-popup__body_row">
+            <span class="menu-popup__body_label">200гр.</span>
+            <span class="menu-popup__body_label">КБЖУ: 320/16/27/4</span>
+          </div>
+  
+          <p class="menu-popup__body_text">Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив. 
+            2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+          </p>
+        </li>
+        <li class="menu-popup__body_item">
+          <div class="menu-popup__body_row">
+            <h4 class="menu-popup__body_subtitle">Сациви из курицы</h4>
+            <b class="menu-popup__body_price">390 грн</b>
+          </div>
+  
+          <div class="menu-popup__body_row">
+            <span class="menu-popup__body_label">200гр.</span>
+            <span class="menu-popup__body_label">КБЖУ: 320/16/27/4</span>
+          </div>
+  
+          <p class="menu-popup__body_text">Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив. 
+            2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+          </p>
+        </li>
+        <li class="menu-popup__body_item">
+          <div class="menu-popup__body_row">
+            <h4 class="menu-popup__body_subtitle">Сациви из курицы</h4>
+            <b class="menu-popup__body_price">390 грн</b>
+          </div>
+  
+          <div class="menu-popup__body_row">
+            <span class="menu-popup__body_label">200гр.</span>
+            <span class="menu-popup__body_label">КБЖУ: 320/16/27/4</span>
+          </div>
+  
+          <p class="menu-popup__body_text">Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив. 
+            2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+          </p>
+        </li>
+        <li class="menu-popup__body_item">
+          <div class="menu-popup__body_row">
+            <h4 class="menu-popup__body_subtitle">Сациви из курицы</h4>
+            <b class="menu-popup__body_price">390 грн</b>
+          </div>
+  
+          <div class="menu-popup__body_row">
+            <span class="menu-popup__body_label">200гр.</span>
+            <span class="menu-popup__body_label">КБЖУ: 320/16/27/4</span>
+          </div>
+  
+          <p class="menu-popup__body_text">Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив. 
+            2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+          </p>
+        </li>
+        <li class="menu-popup__body_item">
+          <div class="menu-popup__body_row">
+            <h4 class="menu-popup__body_subtitle">Сациви из курицы</h4>
+            <b class="menu-popup__body_price">390 грн</b>
+          </div>
+  
+          <div class="menu-popup__body_row">
+            <span class="menu-popup__body_label">200гр.</span>
+            <span class="menu-popup__body_label">КБЖУ: 320/16/27/4</span>
+          </div>
+  
+          <p class="menu-popup__body_text">Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив. 
+            2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+          </p>
+        </li>
+      </ul>
+    </div>
+  
+    <ul class="menu-popup__list-image">
+      <li class="menu-popup__list-image_item">
+        <picture><source srcset="img/popup/05.webp" type="image/webp"><img src="img/popup/05.webp" alt="image"></picture>
+      </li>
+      <li class="menu-popup__list-image_item">
+        <picture><source srcset="img/popup/06.webp" type="image/webp"><img src="img/popup/06.webp" alt="image"></picture>
+      </li>
+      <li class="menu-popup__list-image_item">
+        <picture><source srcset="img/popup/07.webp" type="image/webp"><img src="img/popup/07.webp" alt="image"></picture>
+      </li>
+      <li class="menu-popup__list-image_item">
+        <picture><source srcset="img/popup/08.webp" type="image/webp"><img src="img/popup/08.webp" alt="image"></picture>
+      </li>
+    </ul>
+  </div>
+</div>
+      </main>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer__main">
+      <div class="footer__top">
+        <div class="footer__top_col">
+          <a href="#" class="logo">
+  <img src="img/logo.svg" alt="logo">
+</a>
+        </div>
+        <div class="footer__top_col">
+          <a class="footer__top_tel" href="tel:380987654321">+380 (98) 765 43 21</a>
+
+          <ul class="socials__footer_top">
+            <li class="socials__footer_top_item">
+              <a class="socials__footer_top_link" href="#">
+                <img src="img/footer/tg.svg" alt="icon">
+              </a>
+            </li>
+            <li class="socials__footer_top_item">
+              <a class="socials__footer_top_link" href="#">
+                <img src="img/footer/viber.svg" alt="icon">
+              </a>
+            </li>
+            <li class="socials__footer_top_item">
+              <a class="socials__footer_top_link" href="#">
+                <img src="img/footer/what.svg" alt="icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__top_col">
+          <address class="footer__top_address">
+            г. Киев, станция метро <br>
+            “Крещатик”
+          </address>
+        </div>
+        <div class="footer__top_col">
+          <a class="footer__top_mail" href="mailto:mail@mal.ua">Email: mail@mal.ua</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__bottom_col">
+          <span class="footer__bottom_text">Политика конфиденциальности</span>
+          <span class="footer__bottom_text">Пользовательское соглашение</span>
+        </div>
+        <div class="footer__bottom_col">
+          <span class="footer__bottom_text">Динамо. Грузинское бистро. Все права защищены, 2021</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+
+  <script src="js/app.min.js?_v=20240215160856"></script>
+</body>
+
+</html>

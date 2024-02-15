@@ -19,6 +19,24 @@
 @font-face {
 	font-family: 'NotoSans';
 	font-display: swap;
+	src: url("../fonts/NotoSans-Bold.woff2") format("woff2"),
+	 url("../fonts/NotoSans-Bold.woff") format("woff"),
+	 url("../fonts/NotoSans-Bold.ttf") format("ttf"); 
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'NotoSans';
+	font-display: swap;
+	src: url("../fonts/NotoSans-ExtraBold.woff2") format("woff2"),
+	 url("../fonts/NotoSans-ExtraBold.woff") format("woff"),
+	 url("../fonts/NotoSans-ExtraBold.ttf") format("ttf"); 
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'NotoSans';
+	font-display: swap;
 	src: url("../fonts/NotoSans-Medium.woff2") format("woff2"),
 	 url("../fonts/NotoSans-Medium.woff") format("woff"),
 	 url("../fonts/NotoSans-Medium.ttf") format("ttf"); 
@@ -37,10 +55,10 @@
 @font-face {
 	font-family: 'NotoSans';
 	font-display: swap;
-	src: url("../fonts/NotoSans-ExtraBold.woff2") format("woff2"),
-	 url("../fonts/NotoSans-ExtraBold.woff") format("woff"),
-	 url("../fonts/NotoSans-ExtraBold.ttf") format("ttf"); 
-	font-weight: 800;
+	src: url("../fonts/NotoSans-SemiBoldItalic.woff2") format("woff2"),
+	 url("../fonts/NotoSans-SemiBoldItalic.woff") format("woff"),
+	 url("../fonts/NotoSans-SemiBoldItalic.ttf") format("ttf"); 
+	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
@@ -50,23 +68,5 @@
 	 url("../fonts/Roboto-Regular.woff") format("woff"),
 	 url("../fonts/Roboto-Regular.ttf") format("ttf"); 
 	font-weight: 400;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'NotoSans';
-	font-display: swap;
-	src: url("../fonts/NotoSans-SemiBoldItalic.woff2") format("woff2"),
-	 url("../fonts/NotoSans-SemiBoldItalic.woff") format("woff"),
-	 url("../fonts/NotoSans-SemiBoldItalic.ttf") format("ttf"); 
-	font-weight: 400;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'NotoSans';
-	font-display: swap;
-	src: url("../fonts/NotoSans-Bold.woff2") format("woff2"),
-	 url("../fonts/NotoSans-Bold.woff") format("woff"),
-	 url("../fonts/NotoSans-Bold.ttf") format("ttf"); 
-	font-weight: 700;
 	font-style: normal;
 }
