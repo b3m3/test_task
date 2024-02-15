@@ -2,10 +2,12 @@ const galleryModal = () => {
   const galleryModal = document.querySelector('.gallery-modal');
   const galleryImgs = document.querySelectorAll('.gallery__swiper-slide img');
   const galleryModalImage = document.querySelector('.gallery-modal__wrapp img');
+  const galleryModalSource = document.querySelector('.gallery-modal__wrapp source');
 
   const openGalleryModal = (src) => {
     galleryModal.classList.add('active');
     galleryModalImage.src = src;
+    galleryModalSource.srcset = src;
   }
 
   const closeGalleryModal = (e) => {
